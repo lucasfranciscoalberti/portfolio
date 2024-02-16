@@ -1,3 +1,6 @@
+
+
+
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
@@ -23,6 +26,12 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp);
 
 
 let swiper = new Swiper('.portfolio__container', {
@@ -62,6 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }).go()
 })
+
+
 
 
 
