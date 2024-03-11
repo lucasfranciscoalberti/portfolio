@@ -104,6 +104,10 @@ button:disabled{
     background: var(--body-color);
 }
 
+.center{
+    margin-top: 1rem;
+    text-align: center;
+}
 
 
 body.dark-theme{
@@ -481,9 +485,7 @@ body.dark-theme{
     font-weight: var(--font-medium);
 }
 
-.qualification__button:hover{
-    color: var(--first-color);
-}
+
 
 .qualification__icon{
     font-size: 1.8rem;
